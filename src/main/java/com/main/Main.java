@@ -11,6 +11,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException{
+        File output = new File("output.txt");
+        output.delete();
         try{
         FileInputStream fis = new FileInputStream("list_domain.xlsx");
         XSSFWorkbook xw = new XSSFWorkbook(fis);
